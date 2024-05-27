@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Language Translator</title>
+</head>
+<body>
+    <div class="container">
+        <div class="card input-wrapper">
+            <div class="from">
+                <span class="heading">From : </span>
+                <div class="dropdown-container" id="input-language">
+                    <div class="dropdown-toggle">
+                        <i class="fa fa-globe" aria-hidden="true"></i>
+                        <span class="selected" data-value="auto">Auto Detect</span>
+                        <i class="fa fa-angle-down"></i>
+                    </div>
+                    <ul class="dropdown-menu">
+                        <li class="option active">Option 1</li>
+                        <li class="option">Option 2</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="text-area">
+                <textarea id="input-text" cols="30" rows="10" placeholder="Enter your text here"></textarea>
+                <div class="chars">
+                    <span id="input-chars">0</span> / 5000
+                </div>
+            </div>
+            <div class="card-bottom">
+                <p>Or choose your document</p>
+                <label for="upload-document">
+                    <span id="upload-title">Choose File</span>
+                    <i class="fa fa-cloud-upload"></i>
+                    <input type="file" id="upload-document" hidden />
+                </label>
+                <ul class="controls">
+                    <li class="row from">
+                        <div class="icons">
+                            <i id="from" class="fa fa-volume-up"></i>
+                            <i id="from" class="fa fa-copy"></i>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+        <div class="center">
+            <div class="swap-position">
+                <i class="fa fa-exchange"></i>
+            </div>
+        </div>
+        <div class="card output-wrapper">
+            <div class="to">
+                <span class="heading">To : </span>
+                <div class="dropdown-container" id="output-language">
+                    <div class="dropdown-toggle">
+                        <i class="fa fa-globe" aria-hidden="true"></i>
+                        <span class="selected" data-value="en">English</span>
+                        <i class="fa fa-angle-down"></i>
+                    </div>
+                    <ul class="dropdown-menu">
+                        <li class="option active">Option 1</li>
+                        <li class="option">Option 2</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="text-area">
+                <textarea id="output-text" cols="30" rows="10" placeholder="Translated text will appear..."></textarea>
+            </div>
+            <div class="card-bottom">
+                <p>Or download a document</p>
+                <button id="download-document">
+                    <span>Download</span>
+                    <i class="fa fa-cloud-download"></i>
+                </button>
+                <ul class="controls">
+                    <li class="row to">
+                        <div class="icons">
+                            <i id="to" class="fa fa-volume-up"></i>
+                            <i id="to" class="fa fa-copy"></i>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="mode">
+        <label for="dark-mode-btn" class="toggle">
+            <div class="toggle-track">
+                <input type="checkbox" class="toggle-checkbox" id="dark-mode-btn" />
+                <span class="toggle-thumb"></span>
+                <img src="sun.png" alt="sun" />
+                <img src="moon.png" alt="moon" />
+            </div>
+        </label>
+    </div>
+    <script src="languages.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
