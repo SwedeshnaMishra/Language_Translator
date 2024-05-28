@@ -9,12 +9,14 @@ Welcome to the Language Translator Website! This project is a simple web applica
 - **Document Upload and Download:** Upload documents for translation and download the translated version effortlessly.<br/>
 - **Responsive Design:** Enjoy a smooth and responsive experience across all your devices.<br/>
 
-
 # Technologies Used
 - **HTML:** Helps in structuring of the website, including the input fields, buttons, and placeholders for the translated text. <br/>
 - **CSS:** Helps in styling for the website to ensure it is visually appealing and responsive. <br/>
 - **Javascript:** Handles the functionality of the website, including making API calls to the translation service and updating the DOM with the translated text. <br/>
 - **Google Translate API:** For using the translation functionality, you need to obtain an API key from a translation service provider. Replace `YOUR_API_KEY` in `script.js` with your actual API key. <br/>
+
+# Demo
+You can view a live demo of the project [here](https://swedeshnamishra.github.io/Language_Translator/).
 
 # Getting Started
 Follow these instructions to get a copy of the project up and running on your local machine for development and testing purposes.
