@@ -36,4 +36,4 @@ If you want to contribute to this project, please follow these steps:
 - Open a pull request.
 
 # Project Maintainer
-**Github:** [https://github.com/SwedeshnaMishra]
+**Github:** [Swedeshna Mishra](https://github.com/SwedeshnaMishra)
